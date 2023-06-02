@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website - Easy Tutorials</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/56c3c4c2eb.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Software Developer</p>
+                    <h1>Hi, I'm <span>Cephas Dube</span><br>From South Africa</h1>
+                </div>
+            </div>
+        </div>
+        <!-- -----------About-------------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Welcome to my portfolio website! I'm a versatile full stack 
+                            developer proficient in Python, Java, SQL, JavaScript, HTML, 
+                            and CSS. With expertise in web development, I enjoy creating 
+                            efficient and user-friendly digital experiences. I excel in both 
+                            front-end and back-end development, crafting seamless interfaces 
+                            and building robust server-side architectures. Staying up-to-date 
+                            with industry trends, I adapt quickly and embrace innovative solutions 
+                            to exceed client expectations. Collaboration is essential to me, as I 
+                            thrive in diverse teams, contributing ideas and engaging in constructive 
+                            discussions. Effective communication ensures clear project requirements 
+                            and timely, high-quality deliverables. Beyond coding, I'm an avid learner, 
+                            attending tech conferences and engaging with the developer community. Thank 
+                            you for visiting my portfolio, where I showcase my passion for exceptional 
+                            digital experiences.</p>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('certification')">Certification</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                    <li><span>Web development</span><br>Web app development</li>
+                                    <li><span>App development</span><br>Building Android apps</li>
+                                    <li><span>Database Management</span><br>SQL, MySQL, PostgreSQL</li>
+                                    <li><span>Problem Solving</span><br>Analytical thinking, algorithm design, debugging</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>2021 - current</span><br>UI/UX Design Training at ET Institute</li>
+                                    <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                                    <li><span>2027 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="certification">
+                                <ul>
+                                    <li><span>2023</span><br><a href="https://freecodecamp.org/certification/coder0001/scientific-computing-with-python-v7">Scientific Computing with python at freeCodeCamp</a></li>
+                                    <li><span>2023</span><br><a href="https://www.freecodecamp.org/certification/coder0001/responsive-web-design">Responsive Web design at freeCodeCamp</a></li>
+                                    <li><span>2023</span><br><a href="https://www.sololearn.com/certificates/CC-K9CYI2TN">Python at Sololearn</a></li>
+                                    <li><span>2023</span><br><a href="https://www.sololearn.com/certificates/CC-ALQOWRYS">SQL at Sololearn</a></li>
+                                    <li><span>2023</span><br><a href="https://www.sololearn.com/certificates/CC-7MVJRHRY">JAVA at Sololearn</a></li>
+                                    <li><span>2023</span><br><a href="https://freecodecamp.org/certification/coder0001/javascript-algorithms-and-data-structures">JavaScript Algorithms and Data Structures at freeCodeCamp</a></li>
+                                    
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- --------- services---------- -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Servives</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Development</h2>
+                        <p>In the realm of web development, I specialize in utilizing HTML, 
+                            CSS, Python, and JavaScript to create captivating and functional 
+                            websites. With HTML, I structure the content of web pages, ensuring 
+                            proper semantics and accessibility. CSS allows me to add style and 
+                            design elements, bringing visual appeal and cohesion to the user 
+                            interface. JavaScript enables me to add interactivity and dynamic 
+                            functionality, creating engaging user experiences. Additionally, my 
+                            proficiency in Python allows me to handle server-side tasks and build 
+                            robust backend solutions. From front-end design to back-end development, 
+                            I leverage these programming languages to craft seamless and user-friendly 
+                            websites that meet the needs and expectations of clients and users alike.
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop-simple"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>My passion lies in UI/UX design, where I blend creativity and user-centric 
+                            thinking to create captivating and intuitive digital experiences. By diving 
+                            into extensive user research and analysis, I gain valuable insights into user 
+                            behaviors, needs, and preferences. These insights drive my design process as 
+                            I craft wireframes, mockups, and interactive prototypes that prioritize usability 
+                            and functionality. With a meticulous eye for aesthetics, I carefully select colors, 
+                            typography, and visual elements to establish a cohesive and visually pleasing interface. 
+                            Seamless navigation and intuitive interactions are at the forefront of my design approach, 
+                            ensuring users can effortlessly engage with the website or application. Through iterative 
+                            testing and feedback, I continually refine and enhance the design to optimize the user 
+                            experience. Leveraging my expertise in UI/UX design, I create interfaces that not only 
+                            captivate users but also drive engagement and satisfaction.</p>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>App Development</h2>
+                        <p>As an app developer, I have a diverse skill set that encompasses Python, JavaScript, SQL, 
+                            Java, HTML, CSS, and Dart. Leveraging the power of these programming languages and technologies, 
+                            I create cutting-edge mobile applications across various platforms. With Python, I develop backend 
+                            functionality and integrate APIs, ensuring seamless data flow and efficient server-side operations. 
+                            JavaScript allows me to build interactive and dynamic user interfaces, enhancing the user experience. 
+                            SQL comes in handy when designing and managing databases, ensuring efficient data storage and retrieval. 
+                            Java serves as the foundation for developing robust and scalable Android applications. HTML and CSS enable 
+                            me to craft visually appealing and responsive user interfaces, ensuring cross-browser compatibility. Additionally, 
+                            I utilize Dart, the programming language for Flutter, to build high-performance and cross-platform mobile applications. Through this versatile skill set, I am equipped to develop mobile apps that are feature-rich, visually appealing, and user-friendly, catering to diverse user needs and preferences
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- --------------portfolio--------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from play store.</p>
+                        <!--put  the link of the app in playstore in '#'-->
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from play store.</p>
+                        <!--put  the link of the app in playstore in '#'-->
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from play store.</p>
+                        <!--put  the link of the app in playstore in '#'-->
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact----------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i> malusicephas17@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +27720444569</p>
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/malusi.dube.921"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://github.com/Mastermindddddd"><i class="fa-brands fa-github"></i></i></i></a>
+                    <a href="https://www.instagram.com/mr_lujiq/"><i class="fa-brands fa-instagram"></i></i></a>
+                    <a href="https://www.linkedin.com/in/cephas-dube-b06a9b264/"><i class="fa-brands fa-linkedin-in"></i></i></a>
+                    
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2023 Cephas.<i class="fa-regular fa-heart"></i> All rights reserved</p>
+    </div>
+</div>
+
+
+
+
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links")
+            var tabcontents = document.getElementsByClassName("tab-contents")
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyEZ0bi7-PxfleriTEP4j0wu5vtd5OutKnjCI_ZcruXrTXLVfGoWJRcTA7VxBR_rqRm/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+    </body>
+</html>
